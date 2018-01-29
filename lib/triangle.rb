@@ -9,7 +9,7 @@ class Triangle
      @side_3 = side_3
      #binding.pry
    end
- 
+
    def kind
      if @side_1 <= 0 && @side_2 <= 0 && @side_3 <= 0
          raise TriangleError
@@ -34,6 +34,6 @@ class Triangle
      end
    end
  end
- 
+
  class TriangleError < StandardError
 end
